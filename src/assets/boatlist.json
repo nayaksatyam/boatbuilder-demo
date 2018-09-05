@@ -1,0 +1,44 @@
+[
+  {
+    "Id": 1,
+	"BoatId": "baymax_1910_2019",
+    "Name": "2019 1910 BAYMAX",
+    "Length": 109,
+    "Price": 19999.0000
+  },
+  {
+    "Id": 2,
+	"BoatId": "baymax_2110_2019",
+    "Name": "2019 2110 BAYMAX",
+    "Length": 120,
+    "Price": 21999.0000
+  },
+  {
+    "Id": 3,
+	"BoatId": "carolinabay_2200_2019",
+    "Name": "2019 2200 Carolina Bay",
+    "Length": 101,
+    "Price": 15000.0000
+  },
+  {
+    "Id": 4,
+	"BoatId": "carolinabay_2500_2019",
+    "Name": "2019 2500 Carolina Bay",
+    "Length": 104,
+    "Price": 17000.0000
+  },
+  {
+    "Id": 5,
+    "BoatId": "lxf_252_2019",
+	"Name": "2019 252 LXF",
+    "Length": 127,
+    "Price": 29999.0000
+  },
+  {
+    "Id": 6,
+    "BoatId": "suv_232_2019",
+    "Name": "2019 232 SUV",
+    "Length": 135,
+    "Price": 35000.0000
+  }
+]

@@ -1,0 +1,68 @@
+<div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Boat Builder</h3>
+              <h6 class="card-subtitle">Select the boat and the options to get a quote.</h6>
+
+              <ngb-tabset type="pills" #t="ngbTabset">
+                    <ngb-tab title="1. Boat" id="tab-boat">
+                      <ng-template ngbTabContent>
+                            <div class="row"><p></p></div>
+                            <div class = "row">
+                                    <div class="col-4" *ngFor="let boat of boats"> 
+                                      <div class="card text-center" (click)="t.select('tab-color')">
+                                              <div class="card-body boatcard">
+                                                <h3 class="card-title">{{boat.Name}}</h3>
+                                                <h6 class="card-subtitle">Starting: {{boat.Price | currency}}</h6>
+                                                
+                                                <img alt="Card image cap" class="card-img-top img-responsive" src="assets/images/boats/{{boat.BoatId}}.jpg">
+                                              </div>
+                                              <p>
+                                                  <button class="btn btn-outline-primary" (click)="t.select('tab-color')">Select</button>
+                                              </p>
+                                            </div>
+                                      </div>
+                            </div>
+                      </ng-template>
+                    </ngb-tab>
+                    <ngb-tab title="2. Options" id="tab-color">
+                      <ng-template ngbTabContent>
+                        <div class = "row">
+                          <div class="col-8">
+                            <div class = "row">
+                              <div class="col-12">
+                                <img src = "assets/images/boats/baymax_2110_2019.jpg">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            
+                          </div>
+                        </div>
+                      </ng-template>
+                    </ngb-tab>
+                    <ngb-tab title="3. Accessories">
+                      <ng-template ngbTabContent>
+                        <p class="p-t-20">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown
+                          aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit
+                          butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid.
+                          Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi
+                          qui.</p>
+                      </ng-template>
+                    </ngb-tab>
+                    <ngb-tab title="4. Total">
+                            <ng-template ngbTabContent>
+                              <p class="p-t-20">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown
+                                aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit
+                                butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid.
+                                Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi
+                                qui.</p>
+                            </ng-template>
+                          </ngb-tab>
+            </ngb-tabset>
+</div>
+          </div>
+          </div>
+          </div>      
+
